@@ -1,0 +1,47 @@
+<html>
+    <div class="conntainer">
+        <div class="row mainindex">
+            <div class="col-sm-6 tablemain">
+
+                <table class="table table-sm">
+                       
+                          <thead>
+                              <tr>
+                                 <th>Name</th>
+                                 <th>Website</th>
+                                 <th>Stream</th>
+                                 <th>Email</th>
+                                 <th>Location</th>
+                                 <th>Phone</th>
+                                 <th></th>
+                                  <th></th>
+                              </tr>
+                            </thead>
+
+                            <tbody>
+                                {{#each onradio}}
+
+                                 <tr>
+                                     <td>{{this.radioname}}</td>
+                                     <td>{{this.radiowebsite}}</td>
+                                     <td>{{this.radiostream}}</td>
+                                     <td>{{this.radioemail}}</td>
+                                     <td>{{this.radiolocation}}</td>
+                                     <td>{{this.radiophone}}</td>
+                                     <td>
+                                         <button type="button" class="btn btn-info"><a href="/radio/edit/{{this._id}}">Edit</a></button>
+                                      </td>
+                                      <td>
+                                         <button type="button" class="btn btn-danger">
+                                             <a href="/radio/delete/{{this._id}}">Delete</a>
+                                         </button>
+                                     </td>
+                                 </tr>
+                                 {{/each}}
+                            </tbody>
+                 </table>
+            </div>
+        </div>
+
+    </div>
+</html>

@@ -1,0 +1,53 @@
+<html>
+    <div class="container">
+        <div class="row mainindex">
+            <div class="col-sm-8">
+                <form method="POST" action="/radio/editAction">
+                    <input type="hidden" name="id" value="{{onradio.id}}" />
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Radio Name</span>
+                    <input type="text" class="form-control" name="radioname" value="{{onradio.radioname}}" aria-describedby="basic-addon1">
+                  </div>
+                                   
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Radio Website</span>
+                    <input type="text" class="form-control" name="radiowebsite" value="{{onradio.radiowebsite}}" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Radio Stream URL</span>
+                    <input type="text" class="form-control" name="radiostream" value="{{onradio.radiostream}}" aria-describedby="basic-addon1">
+                  </div>
+
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Radio Email</span>
+                    <input type="text" class="form-control" name="radioemail" value="{{onradio.radioemail}}" aria-describedby="basic-addon1">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Radio Location</span>
+                    <input type="text" class="form-control" name="radiolocation" value="{{onradio.radiolocation}}" aria-describedby="basic-addon1">
+                  </div>
+
+                   <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Phone</span>
+                    <input type="text" class="form-control" name="radiophone" value="{{onradio.radiophone}}" aria-describedby="basic-addon1">
+                  </div>
+
+
+                  <div>
+                      <button type="submit" class="btn btn-primary" name="update">update</button>
+
+                  </div>
+                  </form>
+                  
+                
+
+
+            </div>
+
+        </div>
+
+    </div>
+</html>
